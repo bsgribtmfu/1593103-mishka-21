@@ -1,0 +1,65 @@
+.reviews__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+.reviews__blockquote-item {
+  padding: 0;
+  margin: 0;
+}
+
+.reviews__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  margin-bottom: 33px;
+}
+
+.reviews__author-name {
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.reviews__author-contact {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.reviews__pagination-button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  width: 130px;
+  height: 52px;
+  background-color: #FFFFFF;
+  border: 1px solid #ECECEC;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 38px;
+    &--prev::before,
+    &--next::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/arrow.svg");
+      background-repeat: no-repeat;
+      width: 50px;
+      height: 26px;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+    }
+    &--next::after {
+      transform: rotate(180deg);
+    }
+}

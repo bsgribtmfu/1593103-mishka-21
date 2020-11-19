@@ -1,0 +1,24 @@
+.form-group {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: flex;
+}
+
+.form-group__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 82px;
+  height: 52px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.form-group__radio:checked + .form-group__label {
+  content: "";
+  width: 82px;
+  height: 52px;
+  background-color: transparent;
+  border: 2px solid #63D1BB;
+}
