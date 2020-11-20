@@ -2,52 +2,68 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Интернет магазин - «Мишка»</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__inner">
       <a class="page-header__logo">
-        <img src="https://via.placeholder.com/86x27" alt="Логотип сайта" width="86" height="27">
+        <img src="../img/page-header-logo.svg" alt="Логотип сайта" width="86" height="27">
       </a>
-      <nav class="main-nav">
-        <button class="button main-nav__toggle" type="button">
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
-          <li class="main-nav__item"><a href="#">Новые поступление</a></li>
-          <li class="main-nav__item"><a href="#">Распродажа</a></li>
+        <ul class="main-navigation__list navigation">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Каталог товаров</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Вязание на заказ</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Новые поступления</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Распродажа</a>
+          </li>
         </ul>
       </nav>
-      <ul class="user-nav">
-        <li class="user-nav__item">
-          <a class="user-nav__link" href="#">
-            <span class="visually-hidden">Поиск по сайту</span>
+      <ul class="user-navigation navigation">
+        <li class="navigation__item">
+          <a class="navigation__link navigation__link--search" href="#">
+            Поиск по сайту
           </a>
         </li>
-        <li class="user-nav__item">
-          <a class="user-nav__link" href="#">
+        <li class="navigation__item">
+          <a class="navigation__link navigation__link--cart" href="#">
             Корзина:
-            <span class="user-nav__link-text">пока пуста</span>
+            <span>пока пуста</span>
           </a>
-        </li>
-        <li class="user-nav__item">
-          <p class="user-nav__delivery">Бесплатная доставка по России</p>
         </li>
       </ul>
+      <p class="page-header__text">Бесплатная доставка по России</p>
     </div>
   </header>
   <main>
     <h1 class="visually-hidden">Интернет-магазин вязанных товаров ручной работы</h1>
     <section class="promo">
       <div class="promo__inner">
-        <h2 class="promo__title">Милые штуки ручной работы для дома</h2>
-        <div class="promo__categories">
-          <a class="button promo__categories-button" href="#">Предметы интерьера</a>
-          <a class="button promo__categories-button" href="#">Детские игрушки</a>
-        </div>
+        <h2 class="promo__title">Милые штуки ручной работы&nbsp;для&nbsp;дома</h2>
+        <ul class="promo__categories promo-list">
+          <li class="promo-list__item">
+            <a class="promo-list__link promo-list__link--interior" href="#">
+              <span class="promo-list__text">Предметы интерьера</span>
+            </a>
+          </li>
+          <li class="promo-list__item">
+            <a class="promo-list__link promo-list__link--toy" href="#">
+              <span class="promo-list__text">Детские игрушки</span>
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="popular-product">
@@ -61,12 +77,12 @@
             Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
           </p>
           <dl class="popular-product__description">
-            <dt>Цвет</dt>
-            <dd>«Тиффани»/серый</dd>
-            <dt>Диаметр</dt>
-            <dd>25 см</dd>
-            <dt>Высота</dt>
-            <dd>15 см</dd>
+            <dt class="popular-product__description-termin">Цвет:</dt>
+            <dd class="popular-product__description-details">«Тиффани»/серый</dd>
+            <dt class="popular-product__description-termin">Диаметр:</dt>
+            <dd class="popular-product__description-details">25 см</dd>
+            <dt class="popular-product__description-termin">Высота:</dt>
+            <dd class="popular-product__description-details">15 см</dd>
           </dl>
         </div>
         <img class="popular-product__image" src="https://via.placeholder.com/260x315" alt="Вязаные корзинки ручной работы">
@@ -80,22 +96,22 @@
       <h2 class="about-us__title">Коротко о нас:</h2>
       <div class="about-us__inner">
         <ul class="about-us__list">
-          <li class="about-us__item">
+          <li class="about-us__item about-us__item--ecology">
             <span>Экологически чистые материалы</span>
           </li>
-          <li class="about-us__item">
+          <li class="about-us__item about-us__item--style">
             <span>Скандинавский стиль по российской цене</span>
           </li>
-          <li class="about-us__item">
+          <li class="about-us__item about-us__item--likes">
             <span>Увеличивает лайки на фотографиях</span>
           </li>
-          <li class="about-us__item">
+          <li class="about-us__item about-us__item--handmade">
             <span>Связано вручную с любовью и умилением</span>
           </li>
-          <li class="about-us__item">
+          <li class="about-us__item about-us__item--manufacturer">
             <span>Поддержка отечественного производителя</span>
           </li>
-          <li class="about-us__item">
+          <li class="about-us__item about-us__item--gift">
             <span>Поставляется в подарочной упаковке</span>
           </li>
         </ul>
@@ -104,7 +120,6 @@
     <section class="reviews">
       <div class="reviews__inner">
         <h2 class="reviews__title">Отзывы</h2>
-        <button class="button reviews__button" type="button">Написать</button>
         <div class="reviews__list">
           <blockquote class="reviews__blockquote-item">
             <p class="reviews__text">
@@ -126,29 +141,30 @@
           </blockquote>
         </div>
         <div class="reviews__pagination">
-          <button class="button reviews__pagination-button "><span class="visually-hidden">Вперед</span></button>
-          <button class="button reviews__pagination-button"><span class="visually-hidden">Назад</span></button>
+          <button class="button reviews__pagination-button reviews__pagination-button--prev"><span class="visually-hidden">Вперед</span></button>
+          <button class="button reviews__pagination-button reviews__pagination-button--next"><span class="visually-hidden">Назад</span></button>
         </div>
+        <button class="button reviews__button" type="button">Написать</button>
       </div>
     </section>
     <section class="contacs">
       <div class="contacs__inner contacs__info">
         <h2 class="contacs__title">Контакты</h2>
         <dl class="contacs__description">
-          <dd>e-mail:</dd>
-          <dt>
-            <a class="contacs__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-          </dt>
-          <dd>адрес:</dd>
-          <dt>
+          <dt class="contacs__description-termin">e-mail:</dt>
+          <dd class="contacs__description-details">
+            <a class="contacs__link contacs__link--email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          </dd>
+          <dt class="contacs__description-termin">адрес:</dt>
+          <dd class="contacs__description-details">
             <address class="contacs__address">
-              <a class="contacs__address-link" href="#">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</a>
+              <a class="contacs__link contacs__link--adress" href="#">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</a>
             </address>
-          </dt>
+          </dd>
         </dl>
       </div>
-      <img class="contacs__map" src="https://via.placeholder.com/320x455" alt="Карта, где мы находимся">
-      <button class="contacs__button" type="button">Напишите нам</button>
+      <img class="contacs__map" src="../img/map-mobile.png" alt="Карта, где мы находимся">
+      <button class="button contacs__button" type="button">Напишите нам</button>
     </section>
   </main>
   <footer class="page-footer">
@@ -156,7 +172,7 @@
       <a class="page-footer__logo" href="index.html">
         <img src="https://via.placeholder.com/86х27" alt="Логотип сайта" width="86" height="27">
       </a>
-      <ul class="page-footer__social social">
+      <ul class="page-footer__social-list social">
         <li class="social__item">
           <a class="social__link social__link--instagram" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Мы в Вконтакте</span>
@@ -176,6 +192,7 @@
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__image" src="../img/htmlacademy.svg" width="26" height="34" alt="Разработано в htmlacademy">
           <span class="visually-hidden">HTML Academy</span>
         </a>
       </div>
@@ -186,12 +203,12 @@
     <form class="modal__order-form" method="post" action="https://echo.htmlacademy.ru/">
       <fieldset class="form-group">
       <legend>Выберите размер:</legend>
-        <label class="visually-hidden" for="small">S</label>
-        <input class="form-group__radio" type="radio" id="small" name="size" value="S" checked>
-        <label class="visually-hidden" for="medium">M</label>
-        <input class="form-group__radio" type="radio" id="medium" name="size" value="M">
-        <label class="visually-hidden" for="large">L</label>
-        <input class="form-group__radio" type="radio" id="large" name="size" value="L">
+        <label class="form-group__label" for="small">S</label>
+        <input class="form-group__radio visually-hidden" type="radio" id="small" name="size" value="S" checked>
+        <label class="form-group__label" for="medium">M</label>
+        <input class="form-group__radio visually-hidden" type="radio" id="medium" name="size" value="M">
+        <label class="form-group__label" for="large">L</label>
+        <input class="form-group__radio visually-hidden" type="radio" id="large" name="size" value="L">
       </fieldset>
       <button class="button button--accent" type="submit">Добавить</button>
     </form>

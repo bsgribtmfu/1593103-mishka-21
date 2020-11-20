@@ -1,0 +1,27 @@
+.main-navigation__toggle {
+  border: none;
+  outline: none;
+  width: 20px;
+  height: 2px;
+  background-color: @bg-color-toggle;
+  position: relative;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: @bg-color-toggle;
+    left: 0;
+  }
+
+  &::before {
+    top: -6px;
+  }
+
+  &::after {
+    bottom: -6px;
+  }
+}
