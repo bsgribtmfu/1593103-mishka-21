@@ -1,7 +1,3 @@
-@light-gray: #ECECEC;
-@light-green: #63D1BB;
-@font-black: #000000;
-
 .popular-product {
   margin-top: 30px;
 }
@@ -13,7 +9,7 @@
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
-  color: @font-black;
+  color: @black;
 }
 
 .popular-product__subtitle {
@@ -27,20 +23,21 @@
 
 .popular-product__description {
   margin: 0;
-    & dt {
-      float: left;
-      width: 100px;
-    }
-    & dt,
-    & dd {
-      padding-top: 15px;
-      padding-bottom: 15px;
-      border-bottom: 1px solid @light-gray;
-    }
+
+  &-termin {
+    float: left;
+    width: 100px;
+  }
+
+  &-termin,
+  &-details {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid @light-gray;
+  }
 }
 
 .popular-product__image {
-  width: 100%;
   margin-top: 28px;
 }
 

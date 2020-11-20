@@ -1,6 +1,3 @@
-@font-dark-gray: #444444;
-@border-contacts: #62D1BA;
-
 .contacts {
   margin-top: 38px;
 }
@@ -14,10 +11,11 @@
 
 .contacs__description {
   margin: 0;
-    & dt {
-      float: left;
-      width: 100px;
-    }
+
+  &-termin {
+    float: left;
+    width: 100px;
+  }
 }
 
 .contacs__link {
@@ -27,13 +25,13 @@
   line-height: 30px;
   color: @font-dark-gray;
   text-decoration: none;
-    &--email {
-      border-bottom: 1px solid @border-contacts;
-    }
+
+  &--email {
+    border-bottom: 1px solid @border-contacts;
+  }
 }
 
 .contacs__map {
   margin-top: 62px;
   margin-bottom: 41px;
-  width: 100%;
 }

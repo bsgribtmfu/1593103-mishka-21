@@ -6,9 +6,7 @@
 }
 
 .about-us__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  .list-reset();
 }
 
 .about-us__item {
@@ -18,6 +16,7 @@
   line-height: 20px;
   margin-top: 83px;
   position: relative;
+
   &::before {
     position: absolute;
     content: "";
@@ -26,21 +25,27 @@
     height: 40px;
     background-repeat: no-repeat;
   }
+
   &--ecology::before {
     background-image: url("../img/ecology.svg");
   }
+
   &--style::before {
     background-image: url("../img/style.svg");
   }
+
   &--likes::before {
     background-image: url("../img/likes.svg");
   }
+
   &--handmade::before {
     background-image: url("../img/handmade.svg");
   }
+
   &--manufacturer::before {
     background-image: url("../img/manufacturer.svg");
   }
+
   &--gift::before {
     background-image: url("../img/gift.svg");
   }

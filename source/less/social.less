@@ -1,7 +1,7 @@
 .social {
   margin-top: 25px;
   margin-bottom: 25px;
-  border-bottom: 1px solid #E5E5E5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .social__item {
@@ -11,6 +11,7 @@
 .social__link {
   position: relative;
   width: 30px;
+
   &::before {
     content: "";
     position: absolute;
@@ -18,13 +19,17 @@
     width: 30px;
     background-repeat: no-repeat;
   }
+
   &--instagram::before {
     background-image: url("../img/instagram.svg");
   }
+
   &--facebook::before {
     background-image: url("../img/facebook.svg");
   }
+
   &--twitter::before {
     background-image: url("../img/twitter.svg");
   }
+
 }

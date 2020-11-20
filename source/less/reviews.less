@@ -40,26 +40,29 @@
   padding: 0;
   width: 130px;
   height: 52px;
-  background-color: #FFFFFF;
+  background-color: @white;
   border: 1px solid #ECECEC;
   position: relative;
   margin-top: 30px;
   margin-bottom: 38px;
-    &--prev::before,
-    &--next::after {
-      position: absolute;
-      content: "";
-      background-image: url("../img/arrow.svg");
-      background-repeat: no-repeat;
-      width: 50px;
-      height: 26px;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      margin: auto;
-    }
-    &--next::after {
-      transform: rotate(180deg);
-    }
+
+  &--prev::before,
+  &--next::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 26px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+
+  &--next::after {
+    transform: rotate(180deg);
+  }
+
 }

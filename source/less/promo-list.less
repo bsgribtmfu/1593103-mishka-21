@@ -1,11 +1,5 @@
-@font-white: #FFFFFF;
-@light-green: #63D1BB;
-@darken-green: #56C3B2;
-
 .promo-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  .list-reset();
   margin-top: 160px;
 }
 
@@ -23,17 +17,21 @@
   width: 100%;
   height: 100%;
   text-decoration: none;
-  color: @font-white;
-    &--interior {
-      background-color: @light-green;
-    }
-    &--toy {
-      background-color: @darken-green;
-    }
+  color: @white;
+
+  &--interior {
+    background-color: @light-green;
+  }
+
+  &--toy {
+    background-color: @darken-green;
+  }
+
 }
 
 .promo-list__text {
   display: inline-block;
+  width: 170px;
   margin-top: 24px;
   margin-left: 30px;
 }
