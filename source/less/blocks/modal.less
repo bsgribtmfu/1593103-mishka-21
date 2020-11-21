@@ -13,3 +13,28 @@
   line-height: 30px;
   text-transform: uppercase;
 }
+
+.modal__form-group {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: flex;
+}
+
+.modal__form-group-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 82px;
+  height: 52px;
+  background-color: @white;
+  cursor: pointer;
+}
+
+.modal__form-group-radio:checked + .modal__form-group-label {
+  content: "";
+  width: 82px;
+  height: 52px;
+  background-color: transparent;
+  border: 2px solid @light-green;
+}
