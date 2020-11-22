@@ -1,6 +1,5 @@
 .form-group {
-  margin: 0;
-  padding: 0;
+  .reset-indents();
   border: none;
   border-top: 1px solid @border-green;
   padding-left: 19px;
@@ -8,10 +7,7 @@
 }
 
 .form-group__legend {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 16px;
+  .fonts(normal, bold, 17px, 16px);
   color: @light-green;
   text-transform: uppercase;
 }
@@ -21,11 +17,8 @@
 }
 
 .form-group__label {
+  .fonts(normal, bold, 17px, 18px);
   display: block;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 18px;
   padding-left: 70px;
   cursor: pointer;
   position: relative;
@@ -37,7 +30,7 @@
     content: "";
     width: 40px;
     height: 40px;
-    border: 2px solid @font-dark-gray;
+    border: 2px solid @dark-gray;
     border-radius: 100%;
     left: 0;
     top: 50%;
@@ -106,10 +99,7 @@
   width: 100%;
   height: 52px;
   font-family: inherit;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 17px;
-  line-height: 18px;
+  .fonts(normal, normal, 17px, 18px);
 }
 
 .form-group__textarea {
