@@ -1,43 +1,30 @@
 .reviews__title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 25px;
+  .fonts(normal, bold, 25px, 30px);
   line-height: 30px;
 }
 
 .reviews__blockquote-item {
-  padding: 0;
-  margin: 0;
+  .reset-indents();
 }
 
 .reviews__text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 30px;
+  .fonts(normal, normal, 15px, 30px);
   margin-bottom: 33px;
 }
 
 .reviews__author-name {
+  .fonts(normal, bold, 17px, 24px);
   display: block;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
 }
 
 .reviews__author-contact {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 30px;
+  .fonts(normal, normal, 17px, 30px);
 }
 
 .reviews__pagination-button {
+  .reset-indents();
   outline: none;
   cursor: pointer;
-  margin: 0;
-  padding: 0;
   width: 130px;
   height: 52px;
   background-color: @white;

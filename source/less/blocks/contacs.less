@@ -3,10 +3,7 @@
 }
 
 .contacs__title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 30px;
+  .fonts(normal, bold, 18px, 30px);
 }
 
 .contacs__description {
@@ -19,15 +16,12 @@
 }
 
 .contacs__link {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 30px;
-  color: @font-dark-gray;
+  .fonts(normal, normal, 14px, 30px);
+  color: @dark-gray;
   text-decoration: none;
 
   &--email {
-    border-bottom: 1px solid @border-contacts;
+    border-bottom: 1px solid @border-green;
   }
 }
 

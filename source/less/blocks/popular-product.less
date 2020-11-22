@@ -3,8 +3,7 @@
 }
 
 .popular-product__title {
-  padding: 0;
-  margin: 0;
+  .reset-indents();
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
@@ -13,10 +12,7 @@
 }
 
 .popular-product__subtitle {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 20px;
+  .fonts(normal, bold, 17px, 20px);
   color: @light-green;
   text-transform: uppercase;
 }
@@ -46,10 +42,7 @@
 }
 
 .popular-product__price {
+  .fonts(normal, bold, 17px, 24px);
   display: block;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 24px;
   margin-bottom: 25px;
 }
