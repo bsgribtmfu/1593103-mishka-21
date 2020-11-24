@@ -1,0 +1,32 @@
+.order-form__group {
+  .reset-indents();
+  border: none;
+  display: flex;
+  margin-top: 25px;
+  position: relative;
+}
+
+.order-form__legend {
+  .fonts(normal, normal, 15px, 30px);
+  margin-bottom: 20px;
+}
+
+.order-form__wrapper-input&:not(:last-child) {
+  margin-right: 7px;
+  margin-bottom: 31px;
+}
+
+.order-form__label {
+  width: 82px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .fonts(normal, bold, 17px, 16px);
+  border: 2px solid rgba(68, 68, 68, 0.1);
+}
+
+.order-form__radio:checked + .order-form__label {
+  border: 2px solid @light-green;
+  background: @white;
+}
