@@ -7,30 +7,12 @@
 }
 
 .modal__title {
+  .reset-indents();
   .fonts(normal, bold, 25px, 30px);
   text-transform: uppercase;
+  margin-top: 28px;
 }
 
-.modal__form-group {
+.modal__order-form {
   .reset-indents();
-  border: none;
-  display: flex;
-}
-
-.modal__form-group-label {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 82px;
-  height: 52px;
-  background-color: @white;
-  cursor: pointer;
-}
-
-.modal__form-group-radio:checked + .modal__form-group-label {
-  content: "";
-  width: 82px;
-  height: 52px;
-  background-color: transparent;
-  border: 2px solid @light-green;
 }
