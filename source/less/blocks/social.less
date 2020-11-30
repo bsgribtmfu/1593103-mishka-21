@@ -2,15 +2,29 @@
   margin-top: 25px;
   margin-bottom: 25px;
   border-bottom: 1px solid @border-gray;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    border: none;
+  }
 }
 
 .social__item {
-  margin-left: 30px;
+  width: 30px;
+  height: 30px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .social__link {
   position: relative;
-  width: 30px;
 
   &::before {
     content: "";

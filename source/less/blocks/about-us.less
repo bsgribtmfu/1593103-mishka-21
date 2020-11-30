@@ -1,46 +1,126 @@
+.about-us {
+  margin: 0 auto;
+  max-width: 1150px;
+}
+
 .about-us__title {
   .fonts(normal, bold, 25px, 30px);
 }
 
 .about-us__list {
   .list-reset();
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 174px;
+  }
 }
 
 .about-us__item {
   .fonts(normal, bold, 17px, 20px);
-  margin-top: 83px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   position: relative;
+  width: 350px;
 
   &::before {
     position: absolute;
     content: "";
-    top: -55px;
+    top: 0;
     width: 60px;
     height: 40px;
     background-repeat: no-repeat;
   }
 
-  &--ecology::before {
-    background-image: url("../img/ecology.svg");
+  &--ecology {
+    &::before {
+      background-image: url("../img/ecology.svg");
+    }
+
+    @media (min-width: @tablet-width) {
+      order: 1;
+    }
+
+    @media (min-width: @desktop-width) {
+      order: 1;
+    }
   }
 
-  &--style::before {
-    background-image: url("../img/style.svg");
+  &--style {
+    &::before {
+      background-image: url("../img/style.svg");
+    }
+
+    @media (min-width: @tablet-width) {
+      order: 3;
+    }
+
+    @media (min-width: @desktop-width) {
+      order: 3;
+    }
   }
 
-  &--likes::before {
-    background-image: url("../img/likes.svg");
+  &--likes {
+    &::before {
+      background-image: url("../img/likes.svg");
+    }
+
+    @media (min-width: @tablet-width) {
+      order: 5;
+    }
+
+    @media (min-width: @desktop-width) {
+      order: 5;
+    }
   }
 
-  &--handmade::before {
-    background-image: url("../img/handmade.svg");
+  &--handmade {
+    &::before {
+      background-image: url("../img/handmade.svg");
+    }
+
+    @media (min-width: @tablet-width) {
+      order: 2;
+    }
+
+    @media (min-width: @desktop-width) {
+      order: 2;
+    }
   }
 
-  &--manufacturer::before {
-    background-image: url("../img/manufacturer.svg");
+  &--manufacturer {
+    &::before {
+      background-image: url("../img/manufacturer.svg");
+    }
+
+    @media (min-width: @tablet-width) {
+      order: 4;
+    }
+
+    @media (min-width: @desktop-width) {
+      order: 4;
+    }
   }
 
-  &--gift::before {
-    background-image: url("../img/gift.svg");
+  &--gift {
+    &::before {
+      background-image: url("../img/gift.svg");
+    }
+
+    @media (min-width: @tablet-width) {
+      order: 6;
+    }
+
+    @media (min-width: @desktop-width) {
+      order: 6;
+    }
   }
 }

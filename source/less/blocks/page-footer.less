@@ -1,6 +1,34 @@
 .page-footer {
-  margin-top: 39px;
+  margin: 0 auto;
+  padding: 50px;
+  min-height: 143px;
   background-color: @bg-footer;
+}
+
+.page-footer__inner {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .page-footer__social-list {
