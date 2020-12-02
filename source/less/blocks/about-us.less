@@ -1,26 +1,26 @@
 .about-us {
-  margin: 0 auto;
-  max-width: 1150px;
+  margin-top: 50px;
 }
 
 .about-us__title {
   .fonts(normal, bold, 25px, 30px);
+
+  @media (min-width: @desktop-width) {
+    margin-left: 145px;
+  }
 }
 
 .about-us__list {
   .list-reset();
-  display: flex;
-  flex-direction: column;
 
   @media (min-width: @tablet-width) {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   @media (min-width: @desktop-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: 174px;
+    margin-left: 145px;
   }
 }
 
@@ -29,7 +29,6 @@
   padding-top: 60px;
   padding-bottom: 60px;
   position: relative;
-  width: 350px;
 
   &::before {
     position: absolute;
@@ -48,10 +47,6 @@
     @media (min-width: @tablet-width) {
       order: 1;
     }
-
-    @media (min-width: @desktop-width) {
-      order: 1;
-    }
   }
 
   &--style {
@@ -60,10 +55,6 @@
     }
 
     @media (min-width: @tablet-width) {
-      order: 3;
-    }
-
-    @media (min-width: @desktop-width) {
       order: 3;
     }
   }
@@ -76,10 +67,6 @@
     @media (min-width: @tablet-width) {
       order: 5;
     }
-
-    @media (min-width: @desktop-width) {
-      order: 5;
-    }
   }
 
   &--handmade {
@@ -88,10 +75,6 @@
     }
 
     @media (min-width: @tablet-width) {
-      order: 2;
-    }
-
-    @media (min-width: @desktop-width) {
       order: 2;
     }
   }
@@ -104,10 +87,6 @@
     @media (min-width: @tablet-width) {
       order: 4;
     }
-
-    @media (min-width: @desktop-width) {
-      order: 4;
-    }
   }
 
   &--gift {
@@ -118,9 +97,13 @@
     @media (min-width: @tablet-width) {
       order: 6;
     }
+  }
 
-    @media (min-width: @desktop-width) {
-      order: 6;
-    }
+  @media (min-width: @tablet-width) {
+    width: 334px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 350px;
   }
 }

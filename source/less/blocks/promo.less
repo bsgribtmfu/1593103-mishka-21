@@ -1,28 +1,17 @@
 .promo {
-  margin: 0 auto;
-  max-width: 1150px;
   position: relative;
 
   @media (min-width: @tablet-width) {
-    &::after {
-      content: "";
-      background-image: url("../img/zigzag-fill-desktop.svg");
-      background-repeat: no-repeat;
-      position: absolute;
-      bottom: -20px;
-      width: 1150px;
-      height: 34px;
-    }
-  }
+    margin: 0 auto;
+    padding: 0 50px;
+    max-width: 1150px;
 
-  @media (min-width: @desktop-width) {
     &::after {
       content: "";
       background-image: url("../img/zigzag-fill-desktop.svg");
       background-repeat: no-repeat;
       position: absolute;
       bottom: -20px;
-      width: 1150px;
       height: 34px;
     }
   }
@@ -36,9 +25,9 @@
 
 .promo__title {
   .reset-indents();
+  .fonts(normal, bold, 27px, 30px);
   margin: 0 auto;
   text-align: center;
-  .fonts(normal, bold, 27px, 30px);
   padding-top: 73px;
   width: 215px;
 }

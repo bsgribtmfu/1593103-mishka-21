@@ -6,9 +6,9 @@
   <title>Интернет магазин - «Мишка»</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page__body">
-  <header class="page-header">
-    <nav class="main-navigation">
+<body class="body">
+  <header class="header">
+    <nav class="main-navigation container">
       <div class="main-navigation__wrapper">
         <a class="main-navigation__logo">
           <img src="../img/page-header-logo.svg" alt="Логотип сайта" width="86" height="27">
@@ -74,7 +74,7 @@
         </ul>
       </div>
     </section>
-    <section class="popular-product">
+    <section class="popular-product container">
         <div class="popular-product__name">
           <h2 class="popular-product__title">Вязаные корзинки</h2>
           <span class="popular-product__subtitle">Товар недели</span>
@@ -98,7 +98,7 @@
           </div>
         </div>
     </section>
-    <section class="about-us">
+    <section class="about-us container">
       <h2 class="about-us__title">Коротко о нас:</h2>
       <ul class="about-us__list">
         <li class="about-us__item about-us__item--ecology">
@@ -121,7 +121,8 @@
         </li>
       </ul>
     </section>
-    <section class="reviews">
+    <section class="reviews container">
+      <div class="reviews__inner">
         <h2 class="reviews__title">Отзывы</h2>
         <div class="reviews__list">
           <blockquote class="reviews__blockquote-item">
@@ -133,7 +134,7 @@
               <span class="reviews__author-contact">@misssssiskras</span>
             </cite>
           </blockquote>
-          <blockquote style="display: none;" class="reviews__blockquote-item">
+          <blockquote class="reviews__blockquote-item reviews__blockquote-item--hidden">
             <p class="reviews__text">
               Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
             </p>
@@ -148,18 +149,19 @@
           <button class="button reviews__pagination-button reviews__pagination-button--next"><span class="visually-hidden">Назад</span></button>
         </div>
         <button class="button reviews__button" type="button">Написать</button>
+      </div>
     </section>
-    <section class="contacs">
+    <section class="contacs container">
       <div class="contacs__info">
         <h2 class="contacs__title">Контакты</h2>
-        <div>
+        <div class="contacs__info-item">
           <span class="contacs__span">e-mail:</span>
           <a class="contacs__link contacs__link--email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
         </div>
-        <div>
+        <div class="contacs__info-item">
           <span class="contacs__span">адрес:</span>
           <address class="contacs__address">
-            <a class="contacs__link contacs__link--adress" href="#">г. Санкт-Петербург<br>ул. Большая Конюшенная<br>д. 19/8, офис 101</a>
+            г. Санкт-Петербург<br>ул. Большая Конюшенная<br>д. 19/8, офис 101
           </address>
         </div>
       </div>
@@ -167,12 +169,12 @@
       <button class="button contacs__button" type="button">Напишите нам</button>
     </section>
   </main>
-  <footer class="page-footer">
-    <div class="page-footer__inner">
-      <a class="page-footer__logo">
+  <footer class="footer">
+    <div class="footer__inner container ">
+      <a class="footer__logo">
         <img src="https://via.placeholder.com/86х27" alt="Логотип сайта" width="86" height="27">
       </a>
-      <ul class="page-footer__social-list social">
+      <ul class="footer__social-list social">
         <li class="social__item">
           <a class="social__link social__link--instagram" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Мы в Вконтакте</span>
@@ -189,7 +191,7 @@
           </a>
         </li>
       </ul>
-      <div class="page-footer__copyright copyright">
+      <div class="footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img class="copyright__image" src="../img/htmlacademy.svg" width="26" height="34" alt="Разработано в htmlacademy">

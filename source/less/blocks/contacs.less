@@ -1,7 +1,4 @@
 .contacs {
-  margin: 0 auto;
-  max-width: 1150px;
-
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -17,8 +14,6 @@
 }
 
 .contacs__info {
-  padding: 0 30px;
-
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
@@ -26,26 +21,35 @@
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
     flex-direction: column;
   }
 }
 
+.contacs__info-item {
+  width: 300px;
+}
+
 .contacs__title {
-  margin: 0;
-  padding: 0;
+  .reset-indents();
   .fonts(normal, bold, 18px, 30px);
 
   @media (min-width: @tablet-width) {
+    .fonts(normal, bold, 43px, 50px);
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    .fonts(normal, bold, 53px, 57px);
     width: 100%;
   }
 }
 
 .contacs__span {
-  margin: 0;
-  padding: 0;
   display: block;
+  height: 100%;
+  .reset-indents();
   float: left;
+  margin-right: 25px;
 }
 
 .contacs__link {
@@ -60,27 +64,32 @@
   }
 }
 
+.contacs__address {
+  display: block;
+}
+
 .contacs__map {
-  width: 320px;
   height: 454px;
+  display: block;
 
   @media (min-width: @tablet-width) {
     order: 0;
-    width: 100%;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: auto;
     order: 1;
+    width: 527px;
+    margin-left: auto;
   }
 }
 
 .contacs__button {
-  width: 350px;
   height: 52px;
 
   @media (min-width: @tablet-width) {
+    width: 230px;
     margin: 0 auto;
+    margin-top: 55px;
   }
 
   @media (min-width: @desktop-width) {
