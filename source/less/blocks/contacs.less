@@ -40,22 +40,21 @@
 
   @media (min-width: @desktop-width) {
     .fonts(normal, bold, 53px, 57px);
-    width: 100%;
   }
 }
 
 .contacs__span {
+  .reset-indents();
   display: block;
   height: 100%;
-  .reset-indents();
   float: left;
   margin-right: 25px;
 }
 
 .contacs__link {
+  .fonts(normal, normal, 14px, 30px);
   margin: 0;
   padding: 0;
-  .fonts(normal, normal, 14px, 30px);
   color: @dark-gray;
   text-decoration: none;
 
