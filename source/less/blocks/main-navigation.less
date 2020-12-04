@@ -1,11 +1,83 @@
+.main-navigation {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.main-navigation__wrapper {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 79px;
+
+  @media (min-width: @tablet-width) {
+    height: 89px;
+    order: 2;
+  }
+}
+
+.main-navigation__logo {
+  @media (min-width: @tablet-width) {
+    align-self: center;
+  }
+}
+
+.main-navigation__user-list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: end;
+    order: 3;
+    width: 400px;
+  }
+}
+
+.main-navigation__site-list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 320px;
+    order: 4;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    order: 1;
+  }
+}
+
+.main-navigation__additional-list {
+  @media (min-width: @tablet-width) {
+    display: none;
+    order: 4;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
+.main-navigation__text {
+  .reset-indents();
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    order: 5;
+  }
+}
+
 .main-navigation__toggle {
   border: none;
   outline: none;
   width: 20px;
   height: 2px;
   background-color: @bg-color-toggle;
-  position: relative;
   cursor: pointer;
+  position: absolute;
+  right: 30px;
 
   &::before,
   &::after {
@@ -23,5 +95,9 @@
 
   &::after {
     bottom: -6px;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }

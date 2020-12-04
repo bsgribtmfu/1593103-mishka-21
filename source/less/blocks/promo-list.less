@@ -1,6 +1,10 @@
 .promo-list {
   .list-reset();
-  margin-top: 160px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    margin-top: 80%;
+  }
 }
 
 .promo-list__item {

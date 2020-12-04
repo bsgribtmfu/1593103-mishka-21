@@ -1,0 +1,25 @@
+.footer {
+  min-height: 143px;
+  background-color: @bg-footer;
+  padding-top: 51px;
+}
+
+.footer__inner {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer__logo {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.footer__social-list {
+  .list-reset();
+}
