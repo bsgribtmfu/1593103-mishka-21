@@ -1,0 +1,39 @@
+.order__title {
+  text-align: center;
+
+  @media (min-width: @tablet) {
+    .fonts(normal, bold, 43px, 50px);
+  }
+
+  @media (min-width: @desktop) {
+    .fonts(normal, bold, 53px, 57px);
+  }
+}
+
+.order__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 177px;
+  background-color: @bg-footer;
+
+  @media (min-width: @tablet) {
+    height: 226px;
+  }
+
+  @media (min-width: @desktop) {
+    height: 255px;
+  }
+}
+
+.order__text {
+  margin-top: 19px;
+
+  @media (min-width: @tablet) {
+    margin-top: 54px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-top: 98px;
+  }
+}
