@@ -6,7 +6,7 @@
   position: relative;
 
   &--color {
-    @media (min-width: @tablet) {
+    @media (min-width: @tablet-width) {
       background-color: @bg-footer;
     }
   }
@@ -15,13 +15,13 @@
     margin-top: 0;
   }
 
-  @media (min-width: @tablet) {
+  @media (min-width: @tablet-width) {
     border-top: none;
   }
 }
 
 .form-group__inner {
-  @media (min-width: @tablet) {
+  @media (min-width: @tablet-width) {
     margin-top: 50px;
     padding-left: 154px;
 
@@ -30,14 +30,14 @@
     }
   }
 
-  @media (min-width: @desktop) {
+  @media (min-width: @desktop-width) {
     padding-left: 225px;
     padding-right: 225px;
   }
 }
 
 .form-group__inner-colors {
-  @media (min-width: @tablet) {
+  @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -50,7 +50,7 @@
   text-transform: uppercase;
   margin-bottom: 32px;
 
-  @media (min-width: @tablet) {
+  @media (min-width: @tablet-width) {
     margin-bottom: 0;
     position: absolute;
     top: 66px;
@@ -61,19 +61,19 @@
   margin-bottom: 35px;
 
   &--full-name {
-    @media (min-width: @tablet) {
+    @media (min-width: @tablet-width) {
       display: flex;
       align-items: baseline;
       column-gap: 24px;
     }
   }
 
-  @media (min-width: @tablet) {
+  @media (min-width: @tablet-width) {
     flex-basis: 50%;
     min-height: 52px;
   }
 
-  @media (min-width: @desktop) {
+  @media (min-width: @desktop-width) {
     flex-basis: 33%;
   }
 }

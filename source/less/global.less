@@ -17,10 +17,14 @@ img {
 .container {
   margin: 0 auto;
   min-width: 320px;
+  max-width: 1150px;
   padding: 0 30px;
 
   @media (min-width: @tablet-width) {
-    max-width: 1150px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: @desktop-width) {
     padding: 0 50px;
   }
 }
