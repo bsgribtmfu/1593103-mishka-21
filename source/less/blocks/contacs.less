@@ -3,39 +3,55 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin-top: 60px;
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 457px;
+    width: 1050px;
+    margin: 0 auto;
+    margin-top: 161px;
+    position: relative;
+    min-height: 457px;
   }
 }
 
 .contacs__info {
+  width: 260px;
+  margin: 0 auto;
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 668px;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: column;
+    margin-left: 145px;
   }
 }
 
 .contacs__info-item {
+  display: flex;
+  .fonts(normal, normal, 17px, 30px);
   width: 300px;
+}
+
+.contacs__info-item:not(:last-child) {
+  margin-bottom: 40px;
 }
 
 .contacs__title {
   .reset-indents();
   .fonts(normal, bold, 18px, 30px);
+  margin-bottom: 33px;
 
   @media (min-width: @tablet-width) {
     .fonts(normal, bold, 43px, 50px);
     width: 100%;
+    margin-bottom: 50px;
   }
 
   @media (min-width: @desktop-width) {
@@ -44,11 +60,16 @@
 }
 
 .contacs__span {
+  .fonts(normal, normal, 14px, 30px);
   .reset-indents();
   display: block;
   height: 100%;
   float: left;
   margin-right: 25px;
+
+  @media (min-width: @tablet-width) {
+    .fonts(normal, normal, 17px, 30px);
+  }
 }
 
 .contacs__link {
@@ -58,32 +79,58 @@
   color: @dark-gray;
   text-decoration: none;
 
+  @media (min-width: @tablet-width) {
+    .fonts(normal, normal, 17px, 30px);
+  }
+
   &--email {
     border-bottom: 1px solid @border-green;
+    height: 30px;
+
+    &:hover {
+      color: @border-green;
+    }
+
+    &:active {
+      border-bottom: 1px solid rgba(70, 193, 174, 0.1);
+    }
   }
 }
 
 .contacs__address {
+  .fonts(normal, normal, 14px, 30px);
   display: block;
+
+  @media (min-width: @tablet-width) {
+    .fonts(normal, normal, 17px, 30px);
+  }
 }
 
 .contacs__map {
   height: 454px;
   display: block;
+  margin: 0 auto;
+  margin-top: 62px;
+  width: 320px;
 
   @media (min-width: @tablet-width) {
+    margin: 0 auto;
     order: 0;
+    width: 768px;
+    margin-top: 50px;
   }
 
   @media (min-width: @desktop-width) {
     order: 1;
     width: 527px;
-    margin-left: auto;
+    margin: 0;
+    position: absolute;
+    right: 0px;
   }
 }
 
 .contacs__button {
-  height: 52px;
+  margin-top: 55px;
 
   @media (min-width: @tablet-width) {
     width: 230px;
@@ -92,6 +139,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: auto;
+    position: relative;
+    bottom: 0;
+    margin-left: 145px;
   }
 }

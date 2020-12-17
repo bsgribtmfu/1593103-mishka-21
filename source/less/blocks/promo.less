@@ -1,5 +1,6 @@
 .promo {
   position: relative;
+  min-height: 487px;
 
   @media (min-width: @tablet-width) {
     &::after {
@@ -16,14 +17,31 @@
 .promo__inner {
   background-image: url("../img/hero-mobile.png");
   background-repeat: no-repeat;
+  background-color: @light-gray;
   background-size: 100%;
+  position: relative;
+  top: -35px;
+  z-index: -1;
+
+  @media (min-width: @tablet-width) {
+    top: -90px;
+    z-index: -1;
+  }
 }
 
 .promo__title {
   .reset-indents();
   .fonts(normal, bold, 27px, 30px);
-  margin: 0 auto;
   text-align: center;
-  padding-top: 73px;
-  width: 215px;
+  margin: 0 auto;
+  padding-top: 90px;
+  padding-bottom: 120px;
+  width: 230px;
+  color: @black;
+
+  @media (min-width: @tablet-width) {
+    .fonts(normal, bold, 43px, 50px);
+    padding: 200px 85px 490px 85px;
+    width: auto;
+  }
 }

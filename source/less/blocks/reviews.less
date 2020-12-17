@@ -2,20 +2,28 @@
   @media (min-width: @tablet-width) {
     background-image: url("../../img/reviews.png");
     background-repeat: no-repeat;
-    height: 350px;
+    min-height: 457px;
+    width: 768px;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0;
     height: 457px;
+    width: 1050px;
+    margin: 0 auto;
   }
 }
 
 .reviews__inner {
   @media (min-width: @tablet-width) {
-    position: relative;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 145px;
   }
 }
 
@@ -24,22 +32,23 @@
   .fonts(normal, bold, 25px, 30px);
 
   @media (min-width: @tablet-width) {
+    .fonts(normal, bold, 43px, 50px);
+    align-self: flex-end;
     width: 209px;
     order: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    .fonts(normal, bold, 53px, 57px);
   }
 }
 
 .reviews__list {
-  @media (min-width: @tablet-width) {
-    order: 3;
-  }
-}
+  margin-top: 25px;
 
-.reviews__button {
   @media (min-width: @tablet-width) {
-    width: 175px;
-    order: 1;
-    margin-left: auto;
+    margin-top: 40px;
+    order: 3;
   }
 }
 
@@ -64,6 +73,15 @@
   }
 }
 
+.reviews__author {
+  display: block;
+  margin-top: 45px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 61px;
+  }
+}
+
 .reviews__author-name {
   .fonts(normal, bold, 17px, 24px);
   display: block;
@@ -74,9 +92,13 @@
 }
 
 .reviews__pagination {
+  margin-top: 35px;
+  font-size: 0;
+
   @media (min-width: @tablet-width) {
     position: absolute;
-    right: 50px;
+    margin-top: 0;
+    right: 15px;
     bottom: 0;
   }
 }
@@ -90,6 +112,14 @@
   background-color: @white;
   border: 1px solid @light-gray;
   position: relative;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     border: none;
@@ -113,5 +143,16 @@
 
   &--next::after {
     transform: rotate(180deg);
+  }
+}
+
+.reviews__button {
+  margin-top: 38px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 82px;
+    width: 175px;
+    order: 1;
+    margin-left: auto;
   }
 }
