@@ -1,7 +1,16 @@
 .footer {
+  margin-top: 39px;
   min-height: 143px;
   background-color: @bg-footer;
   padding-top: 51px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 57px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 105px;
+  }
 }
 
 .footer__inner {

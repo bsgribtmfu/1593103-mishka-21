@@ -36,7 +36,10 @@
 .contacs__info-item {
   display: flex;
   .fonts(normal, normal, 17px, 30px);
-  width: 300px;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
 }
 
 .contacs__info-item:not(:last-child) {
@@ -131,6 +134,7 @@
 
 .contacs__button {
   margin-top: 55px;
+  width: 260px;
 
   @media (min-width: @tablet-width) {
     width: 230px;
