@@ -1,11 +1,12 @@
 .order__title {
+  .fonts(normal, bold, 27px, 30px);
   text-align: center;
 
   @media (min-width: @tablet-width) {
     .fonts(normal, bold, 43px, 50px);
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     .fonts(normal, bold, 53px, 57px);
   }
 }
@@ -18,22 +19,48 @@
   background-color: @bg-footer;
 
   @media (min-width: @tablet-width) {
-    min-height: 226px;
+    min-height: 238px;
+    position: relative;
+    top: -66px;
+    z-index: -1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../../img/zigzag.svg");
+      background-repeat: repeat;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 24px;
+      width: 100%;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 255px;
+    min-height: 272px;
+    top: -60px;
+
+    &::after {
+      background-image: url("../../img/zigzag-fill-desktop.svg");
+    }
   }
 }
 
 .order__text {
-  margin-top: 19px;
+  .fonts(normal, normal, 13px, 24px);
+  margin-top: 14px;
+  margin-bottom: 19px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 54px;
+    .fonts(normal, normal, 17px, 30px);
+    margin-top: -10px;
+    margin-bottom: 10px;
   }
 
-  @media (min-width: @tablet-width) {
-    margin-top: 98px;
+  @media (min-width: @desktop-width) {
+    padding-left: 174px;
+    padding-right: 174px;
+    padding-top: 50px;
   }
 }
