@@ -1,8 +1,33 @@
-.copyright__link {
-  float: right;
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+  text-decoration: none;
+  color: @black;
+
+  &:hover .copyright__logo {
+    fill: @darken-green;
+  }
+
+  &:active .copyright__logo {
+    fill-opacity: 0.3;
+  }
 }
 
 .copyright__image {
   width: 26px;
   height: 34px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 30px;
+  }
+}
+
+.copyright__text {
+  .fonts(normal, bold, 19px, 18px);
+
+  @media (min-width: @tablet-width) {
+    .fonts(normal, bold, 19px, 18px);
+  }
 }

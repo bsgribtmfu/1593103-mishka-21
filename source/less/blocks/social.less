@@ -1,7 +1,9 @@
 .social {
-  border-bottom: 1px solid @border-gray;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 20px;
 
   @media (min-width: @tablet-width) {
     border: none;
@@ -13,34 +15,21 @@
 }
 
 .social__item {
-  width: 30px;
-  height: 30px;
-
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
 }
 
 .social__link {
-  position: relative;
+  padding: 5px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    height: 30px;
-    width: 30px;
-    background-repeat: no-repeat;
+  &:hover .social__image {
+    fill: @darken-green;
   }
 
-  &--instagram::before {
-    background-image: url("../img/instagram.svg");
-  }
-
-  &--facebook::before {
-    background-image: url("../img/facebook.svg");
-  }
-
-  &--twitter::before {
-    background-image: url("../img/twitter.svg");
+  &:active .social__image {
+    fill-opacity: 0.3;
   }
 }

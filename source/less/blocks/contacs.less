@@ -1,9 +1,13 @@
 .contacs {
+  margin: 0 auto;
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  min-height: 818px;
+
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin-top: 60px;
+    margin-top: 132px;
+    min-height: 824px;
   }
 
   @media (min-width: @desktop-width) {
@@ -23,13 +27,15 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    column-gap: 30px;
     width: 668px;
     margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: column;
-    margin-left: 145px;
+    margin-left: 0;
+    width: 525px;
   }
 }
 
@@ -40,25 +46,41 @@
   @media (min-width: @tablet-width) {
     width: 300px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 175px;
+  }
 }
 
 .contacs__info-item:not(:last-child) {
-  margin-bottom: 40px;
+  margin-bottom: 29px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .contacs__title {
   .reset-indents();
   .fonts(normal, bold, 18px, 30px);
-  margin-bottom: 33px;
+  margin-bottom: 28px;
 
   @media (min-width: @tablet-width) {
     .fonts(normal, bold, 43px, 50px);
     width: 100%;
+    margin-top: 21px;
     margin-bottom: 50px;
   }
 
   @media (min-width: @desktop-width) {
     .fonts(normal, bold, 53px, 57px);
+    margin-top: 75px;
+    margin-left: 175px;
+    margin-bottom: 35px;
   }
 }
 
@@ -68,10 +90,11 @@
   display: block;
   height: 100%;
   float: left;
-  margin-right: 25px;
+  margin-right: 33px;
 
   @media (min-width: @tablet-width) {
     .fonts(normal, normal, 17px, 30px);
+    margin-right: 26px;
   }
 }
 
@@ -133,18 +156,18 @@
 }
 
 .contacs__button {
-  margin-top: 55px;
+  margin-top: auto;
+  align-self: center;
   width: 260px;
 
   @media (min-width: @tablet-width) {
     width: 230px;
-    margin: 0 auto;
-    margin-top: 55px;
   }
 
   @media (min-width: @desktop-width) {
     position: relative;
     bottom: 0;
-    margin-left: 145px;
+    margin-right: auto;
+    margin-left: 175px;
   }
 }
