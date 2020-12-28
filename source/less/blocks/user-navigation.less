@@ -2,14 +2,37 @@
   .list-reset();
   .fonts(normal, bold, 17px, 24px);
   background-color: @white;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: transparent;
+    background-color: @white;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: calc(50vw - 334px);
+      background-color: @white;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      bottom: -1px;
+      top: 0;
+      left: 350px; // здесь бы хорошо динамически вычислять ширину блока
+    }
   }
 
   @media (min-width: @desktop-width) {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: calc(50vw - 525px);
+      background-color: @white;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      bottom: -1px;
+      top: 0;
+      left: 450px; // здесь бы хорошо динамически вычислять ширину блока
+    }
   }
 }
 

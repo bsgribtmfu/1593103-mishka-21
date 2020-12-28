@@ -1,26 +1,55 @@
 .popular-product {
   margin-top: 30px;
+  min-height: 795px;
+  position: relative;
+
+  &::after {
+    content: "";
+    background-image: url("../../img/zigzaz-gray-s.svg");
+    background-repeat: repeat;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 6px;
+    width: 100%;
+  }
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    min-height: 450px;
+    min-height: 570px;
+    margin-top: 40px;
+
+    &::after {
+      height: 17px;
+      background-image: url("../../img/zigzag-gray-m.svg");
+    }
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 636px;
+    min-height: 732px;
+    margin-top: 55px;
+
+    &::after {
+      height: 17px;
+      background-image: url("../../img/zigzag-gray-l.svg");
+    }
   }
 }
 
 .popular-product__name {
   @media (min-width: @tablet-width) {
+    min-height: 50px;
+    margin-right: 13px;
     display: flex;
     width: 100%;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 61px;
+    margin-right: 0;
+    margin-top: 82px;
   }
 }
 
@@ -48,11 +77,9 @@
   color: @light-green;
   text-transform: uppercase;
   text-align: left;
-  margin-top: 8px;
 
   @media (min-width: @tablet-width) {
     position: relative;
-    top: -10%;
     margin-left: auto;
     width: 100px;
     text-align: center;
@@ -83,21 +110,25 @@
 
 .popular-product__text {
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    .fonts(normal, normal, 17px, 30px);
+  }
 }
 
 .popular-product__description {
   margin: 0;
-  margin-top: 35px;
+  margin-top: 16px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 48px;
+    margin-top: 40px;
   }
 }
 
 .popular-product__description-termin,
 .popular-product__description-details {
   border-bottom: 1px solid @light-gray;
-  padding: 12px 0;
+  padding: 8px 0;
 }
 
 .popular-product__description-termin {
@@ -111,6 +142,7 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
+    margin-top: 0;
     right: 0;
     top: 80px;
     width: 334px;
@@ -129,7 +161,7 @@
   margin-top: 30px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 40px;
+    margin-top: 25px;
   }
 
   @media (min-width: @desktop-width) {
@@ -141,11 +173,19 @@
   .fonts(normal, bold, 17px, 24px);
   display: block;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    .fonts(normal, bold, 20px, 24px);
+  }
 }
 
 .popular-product__button {
   margin-top: 25px;
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 30px;
+  }
 
   @media (min-width: @desktop-width) {
     margin-top: 33px;

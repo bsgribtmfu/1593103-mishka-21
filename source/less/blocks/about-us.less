@@ -1,44 +1,53 @@
 .about-us {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .about-us__title {
   .fonts(normal, bold, 25px, 30px);
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     .fonts(normal, bold, 43px, 50px);
+    margin-top: 70px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 145px;
+    .fonts(normal, bold, 53px, 58px);
+    margin-top: 87px;
+    margin-left: 175px;
   }
 }
 
 .about-us__list {
   .list-reset();
+  margin-top: 20px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 145px;
+    margin-left: 175px;
+    justify-content: flex-start;
   }
 }
 
 .about-us__item {
   .fonts(normal, bold, 17px, 20px);
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 23px;
   position: relative;
 
 
   @media (min-width: @tablet-width) {
     .fonts(normal, bold, 20px, 22px);
-    width: 300px;
+    padding-top: 58px;
+    padding-bottom: 52px;
+    width: 334px;
   }
 
   @media (min-width: @desktop-width) {
@@ -48,7 +57,7 @@
   &::before {
     position: absolute;
     content: "";
-    top: 0;
+    top: 5px;
     width: 60px;
     height: 40px;
     background-repeat: no-repeat;
