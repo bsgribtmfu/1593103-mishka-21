@@ -1,9 +1,14 @@
 .catalog {
+  @media (min-width: @tablet-width) {
+    margin-top: -54px;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     row-gap: 51px;
     column-gap: 51px;
+    margin-top: 50px;
   }
 }

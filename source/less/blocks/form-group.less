@@ -221,7 +221,7 @@
 
 .form-group__radio:hover::before,
 .form-group__checkbox:hover::before,
-.form-group__input:hover + .form-group__text {
+.form-group__input + .form-group__text:hover {
   border-color: @border-green;
 }
 
@@ -275,14 +275,16 @@
   padding-left: 0;
 }
 
-.form-group__input:hover + .form-group__text {
+.form-group__input:hover + .form-group__text,
+.form-group__text:focus {
   border-color: @border-green;
 }
 
 .form-group__input:focus + .form-group__text,
 .form-group__textarea:focus,
 .form-group__tel:focus,
-.form-group__email:hover {
+.form-group__email:hover,
+.form-group__text:focus {
   color: @dark-gray;
 }
 
