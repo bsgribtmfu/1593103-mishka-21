@@ -1,5 +1,6 @@
 .promo-list {
   .list-reset();
+  background: linear-gradient(@light-green 50%, @darken-green 50%);
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -31,10 +32,7 @@
   text-decoration: none;
   color: @white;
   padding-left: 30px;
-
-  @media (min-width: @desktop-width) {
-    padding-left: 36px;
-  }
+  transition: all 0.5s ease;
 
   &--interior {
     background-color: @light-green;
@@ -45,6 +43,30 @@
     background-color: @darken-green;
     padding-right: 27px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 36px;
+  }
+}
+
+.promo-list__link:hover > .promo-list__image {
+  fill-opacity: 0.7;
+}
+
+.promo-list__link:active > .promo-list__image {
+  fill-opacity: 0.3;
+}
+
+.promo-list__link:hover {
+  transform: translateY(-5px);
+}
+
+.promo-list__link--interior:hover {
+  background-color: @promo-hover-interior;
+}
+
+.promo-list__link--toy:hover {
+  background-color: @promo-hover-toy;
 }
 
 .promo-list__text {
@@ -58,5 +80,5 @@
 }
 
 .promo-list__image {
-  opacity: 0.5;
+  fill-opacity: 0.5;
 }

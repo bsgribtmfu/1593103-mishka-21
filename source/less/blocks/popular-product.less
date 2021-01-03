@@ -17,7 +17,7 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     position: relative;
     min-height: 570px;
     margin-top: 40px;
@@ -25,6 +25,7 @@
     &::after {
       height: 17px;
       background-image: url("../../img/zigzag-gray-m.svg");
+      background-size: contain;
     }
   }
 
@@ -42,7 +43,7 @@
 .popular-product__name {
   @media (min-width: @tablet-width) {
     min-height: 50px;
-    margin-right: 13px;
+    margin-top: 10px;
     display: flex;
     width: 100%;
   }
@@ -72,8 +73,8 @@
 }
 
 .popular-product__subtitle {
-  display: block;
   .fonts(normal, bold, 17px, 20px);
+  display: block;
   color: @light-green;
   text-transform: uppercase;
   text-align: left;
@@ -81,8 +82,9 @@
   @media (min-width: @tablet-width) {
     position: relative;
     margin-left: auto;
-    width: 100px;
+    margin-right: 15px;
     text-align: center;
+    width: 100px;
   }
 
   @media (min-width: @desktop-width) {
@@ -123,6 +125,10 @@
   @media (min-width: @tablet-width) {
     margin-top: 40px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 47px;
+  }
 }
 
 .popular-product__description-termin,
@@ -144,14 +150,14 @@
     position: absolute;
     margin-top: 0;
     right: 0;
-    top: 80px;
+    top: 110px;
     width: 334px;
     height: 404px;
     z-index: -1;
   }
 
   @media (min-width: @desktop-width) {
-    top: 0;
+    top: 20px;
     width: 525px;
     height: 636px;
   }
@@ -165,7 +171,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 72px;
+    margin-top: 80px;
   }
 }
 
