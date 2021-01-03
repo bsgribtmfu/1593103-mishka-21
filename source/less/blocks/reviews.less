@@ -2,12 +2,18 @@
   margin-top: 35px;
 
   @media (min-width: @tablet-width) {
-    background-image: url("../../img/reviews.png");
+    background-image: url("../../img/review@1x.jpg");
     background-repeat: no-repeat;
+    background-size: 350px 457px;
+    background-position: left;
     min-height: 457px;
     width: 768px;
     margin: 0 auto;
     margin-top: 30px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/review@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -51,8 +57,12 @@
   margin-top: 15px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 35px;
+    margin-top: 40px;
     order: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 35px;
   }
 }
 
