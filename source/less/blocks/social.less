@@ -24,12 +24,16 @@
 
 .social__link {
   padding: 5px;
+}
 
-  &:hover .social__image {
-    fill: @darken-green;
-  }
+.social__image {
+  fill: @black;
+}
 
-  &:active .social__image {
-    fill-opacity: 0.3;
-  }
+.social__link:hover .social__image {
+  fill: @darken-green;
+}
+
+.social__link:active .social__image {
+  fill-opacity: 0.3;
 }
