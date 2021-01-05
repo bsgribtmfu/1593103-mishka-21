@@ -93,23 +93,20 @@
   opacity: 0.6;
 }
 
+.user-navigation__link:hover .user-navigation__image {
+  fill: @light-green;
+  fill-opacity: 1;
+}
+
 .user-navigation__image {
   position: absolute;
   left: 32px;
   top: 50%;
   transform: translateY(-50%);
+  fill-opacity: 0.2;
 
   @media (min-width: @tablet-width) {
     left: 31px;
     transform: translateY(-50%);
   }
-}
-
-.user-navigation__link .user-navigation__image path {
-  fill-opacity: 0.2;
-}
-
-.user-navigation__link:hover .user-navigation__image path {
-  fill: @light-green;
-  fill-opacity: 1;
 }
