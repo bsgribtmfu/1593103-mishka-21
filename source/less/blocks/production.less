@@ -105,18 +105,19 @@
   width: 100px;
   height: 76px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  transition: 0.2s;
 
   &:hover {
-    width: 121px;
-    height: 92px;
+    transform: scale(1.2);
   }
 
   &:active {
-    width: 81px;
-    height: 62px;
+    transform: scale(0.8);
     opacity: 0.8;
   }
 
@@ -127,34 +128,35 @@
 }
 
 .production__video {
-  background-image: url("../../img/video-mobile@1x.jpg");
+  background-image: url("../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
   width: 100%;
   height: 150px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/video-mobile@2x.jpg");
+    background-image: url("../img/video-mobile@2x.jpg");
     background-size: 100%;
   }
 
   @media (min-width: @tablet-width) {
-    background-image: url("../../img/video-tablet@1x.jpg");
+    background-image: url("../img/video-tablet@1x.jpg");
     background-size: 668px 455px;
     height: 100%;
     width: 100%;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/video-tablet@2x.jpg");
+      background-image: url("../img/video-tablet@2x.jpg");
     }
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url("../../img/video-desktop@1x.jpg");
+    background-image: url("../img/video-desktop@1x.jpg");
     background-size: 682px 455px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/video-desktop@2x.jpg");
+      background-image: url("../img/video-desktop@2x.jpg");
     }
   }
 }
