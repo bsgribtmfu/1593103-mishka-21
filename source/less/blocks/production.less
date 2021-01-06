@@ -48,6 +48,10 @@
   }
 }
 
+.production__icon-camera {
+  fill: @light-green;
+}
+
 .production__title {
   margin: 0;
   .fonts(normal, bold, 17px, 24px);
@@ -106,7 +110,14 @@
   transform: translate(-50%, -50%);
 
   &:hover {
-    transform: scale(1.2) translate(-50%, -50%);
+    width: 121px;
+    height: 92px;
+  }
+
+  &:active {
+    width: 81px;
+    height: 62px;
+    opacity: 0.8;
   }
 
   @media (min-width: @tablet-width) {
