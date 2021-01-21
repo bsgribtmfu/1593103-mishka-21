@@ -42,17 +42,15 @@ const html = () => {
     .pipe(gulp.dest("build"));
 }
 
-// // Scripts
+const scripts = () => {
+  return gulp.src("source/js/script.js")
+    .pipe(uglify())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
+}
 
-// const scripts = () => {
-//   return gulp.src("source/js/script.js")
-//     .pipe(uglify())
-//     .pipe(rename("script.min.js"))
-//     .pipe(gulp.dest("build/js"))
-//     .pipe(sync.stream());
-// }
-
-// exports.scripts = scripts;
+exports.scripts = scripts;
 
 // Images
 
@@ -92,6 +90,7 @@ const sprite = () => {
     "source/img/form-icon-tel.svg",
     "source/img/form-icon-email.svg",
     "source/img/camera.svg",
+    "source/img/map-pin.svg",
   ])
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
@@ -149,7 +148,7 @@ const reload = done => {
 
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series(styles));
-  // gulp.watch("source/js/script.js", gulp.series(scripts));
+  gulp.watch("source/js/script.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
 
@@ -160,6 +159,7 @@ const build = gulp.series(
   gulp.parallel(
     styles,
     html,
+    scripts,
     sprite,
     copy,
     images,

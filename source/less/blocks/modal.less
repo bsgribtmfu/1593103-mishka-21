@@ -1,10 +1,30 @@
 .modal {
   display: none;
-  margin: 0 auto;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+
+  &--opened {
+    display: block;
+  }
+}
+
+.modal__inner {
+  position: absolute;
   height: 336px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  background-position: 0 50%;
   background-color: @white;
   border: 1px solid @border-light-gray;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  min-width: 320px;
 
   @media (min-width: @tablet-width) {
     width: 566px;
@@ -46,11 +66,17 @@
   border: 2px solid @light-green;
 }
 
+.modal__form-group-label:hover {
+  border: 2px solid rgba(0, 1, 1, 0.3);
+}
+
 .modal__form-group-label {
+  .fonts(normal, bold, 17px, 16px);
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid rgba(0, 1, 1, 0.25);
+  color: @dark-gray;
+  border: 2px solid rgba(0, 1, 1, 0.1);
   cursor: pointer;
   width: 82px;
   height: 52px;

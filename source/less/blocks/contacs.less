@@ -154,6 +154,7 @@
   margin: 0 auto;
   margin-top: 62px;
   width: 320px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
@@ -170,6 +171,28 @@
     right: 0;
     top: 0;
   }
+}
+
+.contacs__map-pin {
+  position: absolute;
+  top: 32%;
+  left: 43%;
+  z-index: 111;
+
+  @media (min-width: @tablet-width) {
+    top: 30%;
+    left: 47%;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 31%;
+    left: 46%;
+  }
+}
+
+.contacs__map-image {
+  height: 100%;
+  width: 100%;
 }
 
 .contacs__button {
