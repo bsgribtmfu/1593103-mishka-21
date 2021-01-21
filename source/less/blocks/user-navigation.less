@@ -4,6 +4,10 @@
   background-color: @white;
   position: relative;
 
+  &--closed {
+    display: none;
+  }
+
   @media (min-width: @tablet-width) {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     background-color: @white;
@@ -106,7 +110,7 @@
   fill-opacity: 0.2;
 
   @media (min-width: @tablet-width) {
-    left: 31px;
+    left: 26px;
     transform: translateY(-50%);
   }
 }

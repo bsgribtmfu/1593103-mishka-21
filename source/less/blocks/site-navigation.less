@@ -4,6 +4,10 @@
   background-color: @white;
   position: relative;
 
+  &--closed {
+    display: none;
+  }
+
   @media (min-width: @tablet-width) {
     .fonts(normal, bold, 15px, 24px);
     border-bottom: none;
@@ -23,7 +27,7 @@
       border-bottom: 1px solid rgba(0, 0, 0, 0.1);
       bottom: -1px;
       top: 0;
-      right: 450px; // здесь бы хорошо динамически вычислять ширину блока
+      right: 450px;
     }
   }
 }
